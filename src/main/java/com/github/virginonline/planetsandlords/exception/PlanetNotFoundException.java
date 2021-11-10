@@ -1,0 +1,22 @@
+package com.github.virginonline.planetsandlords.exception;
+
+/**
+ * The type PlanetNotFoundException.
+ */
+public class PlanetNotFoundException extends Exception {
+    /**
+     * Instantiates a new PlanetNotFoundException.
+     *
+     * @param id the id ({@link Long})
+     */
+    public PlanetNotFoundException(Long id) {
+        super("Planet by '" + id + "' not found.");
+    }
+
+    /**
+     * Instantiates a new PlanetNotFoundException.
+     */
+    public PlanetNotFoundException() {
+        super("Planet not found.");
+    }
+}
